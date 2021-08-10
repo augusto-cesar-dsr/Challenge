@@ -1,0 +1,18 @@
+<p id="notice" class="text-success"><%= notice %></p>
+
+<p class="text-info">
+  <strong>Name:</strong>
+  <%= @client.name%>
+</p>
+
+<p class="text-info">
+  <strong>Mail:</strong>
+  <%= @client.mail %>
+</p>
+
+<p class="text-info">
+  <strong>Birth date:</strong>
+  <%= @client.birth_date %>
+</p>
+
+<%= link_to 'Edit', edit_client_path(@client), class:"btn btn-info" %> 

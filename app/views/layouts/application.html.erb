@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Challenge</title>
+    
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%# stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%# javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="bg-dark">
+    <header>
+      <div id="header-wrap" class="container-fluid">
+        <h1><%= link_to "Let's Start This Challange", root_path, class:"nav-link link-info display-4" %> </h1>
+        <nav>
+          <ul class="nav justify-content-end">
+            <li class:"nav-item">
+              <%= link_to "Clients", clients_path, class:"nav-link link-info"%>
+            </li>
+              |
+            <li class:"nav-item">
+              <%= link_to "Products", products_path, class:"nav-link link-info" %>
+            </li>
+              |
+            <li class:"nav-item">
+              <%= link_to "Sales", sales_path, class:"nav-link link-info" %>
+            </li>
+          </ul>
+        </nav>
+        <hr>
+        <hr class="bg-light">
+      </div>
+    </header>
+    <div id="content py-4" class="h-100 p-5 hounded-3 container-fluid border col-md-11 text-info">
+
+        <%= yield %>
+    </div>
+  </body>
+</html>

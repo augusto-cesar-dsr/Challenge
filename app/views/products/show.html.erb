@@ -1,0 +1,21 @@
+<p id="notice" class="text-success"><%= notice %></p>
+
+<p class="text-info">
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+
+<p class="text-info">
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p class="text-info">
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+
+<p class="text-info">
+  <%= link_to 'Edit', edit_product_path(@product), class:"btn btn-info" %> |
+  <%= link_to 'Destroy', product_path(@product), method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-info" %>
+<p/>

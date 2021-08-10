@@ -1,0 +1,13 @@
+<p id="notice" class="text-success"><%= notice %></p>
+
+<p class="text-info">
+  <strong>Client:</strong>
+  <%= @sale.client.name %>
+</p>
+
+<p class="text-info">
+  <strong>Product:</strong>
+  <%= @sale.product.name %>
+</p>
+
+<%= link_to 'Edit', edit_sale_path(@sale), class:"btn btn-info"%> 
