@@ -33,8 +33,8 @@ gem 'jbuilder', '~> 2.5'
 # com uma barreira que o curto prazo de aprendizado com aplicação me forçaram 
 # a seguir sem buscar uma solução que faça uso, sem a quebra do protocolo de programação estruturada
 
-# Use to uploads images files
-# gem "paperclip", "~> 5.0.0"
+# devise
+gem 'devise'
 
 # Use in tests
 # gem 'rspec-rails', '~> 4.0.0'
